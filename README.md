@@ -2,10 +2,17 @@
 
 A tiny CLI tool for daily markdown notes. Saves timestamped entries to `~/scratchpad/YYYY-MM-DD.md`.
 
+## Usage
+
+```bash
+sp "quick note"
+sp               # opens today’s file in your $EDITOR
+```
+
 ## Install
 
 ```bash
-git clone https://github.com/yourusername/scratchpad.py.git
+git clone https://github.com/jmelowry/scratchpad.py.git
 ```
 
 Make it easy to run:
@@ -28,10 +35,4 @@ Or just run it directly:
 ~/scratchpad.py/bin/sp "note"
 ```
 
-## Usage
-
-```bash
-sp "quick note"
-sp               # opens today’s file in your $EDITOR
-```
 
