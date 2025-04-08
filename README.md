@@ -1,11 +1,37 @@
 # scratchpad (`sp`)
-spur-of-the-moment notes cli
 
-## Usage
-anything after `sp` is the note.
-sp opens the note in your `$EDITOR`
+A tiny CLI tool for daily markdown notes. Saves timestamped entries to `~/scratchpad/YYYY-MM-DD.md`.
+
+## Install
 
 ```bash
-sp note to self
-sp # opens today’s file in $EDITOR
+git clone https://github.com/yourusername/scratchpad.py.git
 ```
+
+Make it easy to run:
+
+### bash
+```bash
+echo "alias sp='~/scratchpad.py/bin/sp'" >> ~/.bash_profile
+source ~/.bash_profile
+```
+
+### zsh
+```bash
+echo "alias sp='~/scratchpad.py/bin/sp'" >> ~/.zshrc
+source ~/.zshrc
+```
+
+Or just run it directly:
+
+```bash
+~/scratchpad.py/bin/sp "note"
+```
+
+## Usage
+
+```bash
+sp "quick note"
+sp               # opens today’s file in your $EDITOR
+```
+
