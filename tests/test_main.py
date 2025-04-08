@@ -26,4 +26,4 @@ def test_append_note_writes_to_file(tmp_path):
 
 def test_editor_default(monkeypatch):
     monkeypatch.delenv("EDITOR", raising=False)
-    assert main.open_in_editor.__code__.co_argcount == 1  # haha this one's a stretch
+    assert main.open_in_editor.__code__.co_argcount == 1
